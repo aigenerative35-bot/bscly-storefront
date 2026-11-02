@@ -9,6 +9,14 @@
     t.innerHTML = t.innerHTML + t.innerHTML;
   });
 
+  /* ---------- 1b. Sticky header state ---------- */
+  const headerEl = document.querySelector('[data-header]');
+  if (headerEl) {
+    const onScroll = () => headerEl.classList.toggle('is-stuck', window.scrollY > 12);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   /* ---------- 2. Mobile nav ---------- */
   const drawer = document.querySelector('.nav-drawer');
   const overlay = document.querySelector('.overlay');
@@ -167,7 +175,7 @@
   if (grid) {
     const cards = Array.from(grid.children);
     const boxes = document.querySelectorAll('[data-filter]');
-    const countEl = document.querySelector('[data-count]');
+    const countEl = document.querySelector('[data-product-count]');
     const sortSel = document.querySelector('[data-sort]');
 
     function apply() {
@@ -218,6 +226,37 @@
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   } else {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+
+  /* ---------- 7b. Count-up numbers ---------- */
+  const isStatic = location.search.indexOf('static') > -1;
+  function countUp(el) {
+    const target = parseFloat(el.dataset.count);
+    const dec = parseInt(el.dataset.dec || '0', 10);
+    const suffix = el.dataset.suffix || '';
+    if (isStatic || isNaN(target)) { el.textContent = target.toFixed(dec) + suffix; return; }
+    const dur = 1400, t0 = performance.now();
+    function step(t) {
+      const k = Math.min(1, (t - t0) / dur);
+      const eased = 1 - Math.pow(1 - k, 3);
+      el.textContent = (target * eased).toFixed(dec) + suffix;
+      if (k < 1) requestAnimationFrame(step);
+      else el.textContent = target.toFixed(dec) + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  const counters = document.querySelectorAll('[data-count]');
+  if (counters.length) {
+    if ('IntersectionObserver' in window && !isStatic) {
+      const cio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { countUp(en.target); cio.unobserve(en.target); }
+        });
+      }, { threshold: 0.4 });
+      counters.forEach(el => cio.observe(el));
+    } else {
+      counters.forEach(countUp);
+    }
   }
 
   /* ---------- 8. Forms ---------- */

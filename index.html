@@ -9,7 +9,7 @@
 <meta property="og:description" content="BSCLY — pH 6.8 pet grooming, made in India for the skin your pet lives in.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
   <span>250 trade partners nationwide</span>
 </div></div>
 
-<header class="header">
+<header class="header" data-header>
   <div class="wrap header__bar">
     <nav class="header__nav">
       <a href="collection.html">Shop all</a>
@@ -43,7 +43,7 @@
 <div class="nav-drawer">
   <div class="nav-drawer__top">
     <span class="logo">BSCLY</span>
-    <button data-close-nav class="eyebrow">Close</button>
+    <button data-close-nav class="eyebrow eyebrow--plain">Close</button>
   </div>
   <a href="index.html">Home</a>
   <a href="collection.html">Shop all</a>
@@ -59,16 +59,16 @@
 
 <main>
 
-<section class="hero wrap">
-  <div class="hero__grid">
+<section class="hero">
+  <div class="wrap hero__grid">
     <div>
-      <div class="hero__kicker"><span class="eyebrow">Maison for pets — Est. Ambala, India</span></div>
-      <h1 class="display-xl">Grooming,<br><em>composed</em><br>for the skin<br>your pet lives in.</h1>
-      <p class="lede">A house of herbal formulas balanced at pH 6.8 — shampoos, dry baths, paw care
-      and fragrance, made for Indian heat, monsoon ticks and the daily walk home.</p>
+      <span class="eyebrow">Made in India · pH 6.8</span>
+      <h1 class="display-xl"><span class="w">Bath&nbsp;day,</span> <span class="w">without</span> <span class="w">the</span> <span class="w"><em class="hl">drama.</em></span></h1>
+      <p class="lede">Herbal grooming for Indian dogs and cats — neem for monsoon ticks, dry baths for the
+      days between, paw care for pavements that hit 50°C. Balanced to the one number that matters.</p>
       <div class="hero__actions">
         <a class="btn" href="collection.html">Shop the shelf</a>
-        <a class="btn btn--ghost" href="ingredients.html">The pH 6.8 story</a>
+        <a class="btn btn--ghost" href="collection.html?c=cats">Meet the Meow range</a>
       </div>
       <div class="hero__meta">
         <p><b>6.8</b>The pH every formula is balanced to</p>
@@ -77,54 +77,91 @@
       </div>
     </div>
     <div class="hero__stage">
-      <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900" alt="Neem Pet Herbal Shampoo">
-      <div class="seal"><span>No. 01<b>Neem</b>Herbal</span></div>
-      <div class="stage-cap"><span>Neem Pet Herbal Shampoo</span><span>₹799</span></div>
+      <div class="pawbg"></div>
+      <img class="pack" src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900" alt="Neem Pet Herbal Shampoo">
+      <span class="float-badge float-badge--1"><i></i> No. 1 bestseller</span>
+      <span class="float-badge float-badge--2"><i></i> Tear-free · pH 6.8</span>
+      <span class="float-badge float-badge--3"><i></i> Cruelty free</span>
+      <div class="stage-cap"><span>Neem Pet Herbal Shampoo</span><b>₹799</b></div>
     </div>
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap">
-    <span class="eyebrow">The house standard</span>
-    <h2 class="display-l reveal" style="max-width:20ch;margin-top:16px">One number decides<br>everything we make.</h2>
-    <p class="lede reveal" style="margin-top:22px">A dog's skin sits at pH 6.8. Human shampoo sits near 5.5 — which is why it
-    strips the coat and leaves the itch behind. Every BSCLY formula is built to that one number, then
-    tested batch by batch in our Ambala studio.</p>
-    <div class="band__grid reveal">
-      <div class="band__cell"><b>6.8</b><span>Balanced pH</span></div>
-      <div class="band__cell"><b>85%</b><span>India-sourced</span></div>
-      <div class="band__cell"><b>0</b><span>Synthetic dyes</span></div>
-      <div class="band__cell"><b>14</b><span>Day returns</span></div>
+<div class="marquee"><div class="marquee__track">
+  <span>Bath day</span><span>Coat care</span><span>Paw care</span><span>Tick season</span>
+  <span>Cat care</span><span>Between baths</span><span>Walkies</span>
+</div></div>
+
+<section class="section--tight wrap">
+  <div class="banner reveal">
+    <img class="banner__img" src="https://cdn.shopify.com/s/files/1/0768/8768/7387/collections/dogi.png?v=1778581780&width=1600" alt="Bath day at home">
+    <div class="banner__inner">
+      <span class="eyebrow">The monsoon edit</span>
+      <h2>Ticks peak when the rain starts.</h2>
+      <p>Neem at bath time, powder along the spine between baths, and a check of the ears, neck and
+      toes after every wet walk. Three products, one routine.</p>
+      <div class="hero__actions">
+        <a class="btn btn--clay" href="collection.html?c=outdoor">Shop the anti-tick edit</a>
+        <a class="btn btn--ghost" href="ingredients.html">Why neem works</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section wrap">
   <div class="section-head">
-    <div><span class="eyebrow">Shop by concern</span><h2 class="display-m">Start where it troubles them.</h2></div>
-    <a class="link-u" href="collection.html">All products</a>
+    <div>
+      <span class="eyebrow">Shop by need</span>
+      <h2 class="display-m">Four shelves,<br>one standard.</h2>
+    </div>
+    <p class="lede" style="max-width:34ch">Nothing made for dogs is used on cats — the Meow range is
+    formulated separately, from the ground up.</p>
   </div>
-  <div class="concerns reveal">
-    <a class="concern" href="collection.html?c=outdoor"><span>01</span> Ticks &amp; fleas</a>
-    <a class="concern" href="collection.html"><span>02</span> Itchy skin</a>
-    <a class="concern" href="collection.html"><span>03</span> Bad odour</a>
-    <a class="concern" href="collection.html?c=paws"><span>04</span> Cracked paws</a>
-    <a class="concern" href="collection.html?c=cats"><span>05</span> Cat care</a>
-    <a class="concern" href="collection.html"><span>06</span> First bath</a>
-    <a class="concern" href="collection.html"><span>07</span> Puppy training</a>
+  <div class="tiles reveal">
+    <a class="tile tile--mint" href="collection.html?c=grooming">
+      <h3>Bath day</h3><span>Neem &amp; Total Care</span>
+      <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900" alt="Bath day">
+    </a>
+    <a class="tile tile--sand" href="collection.html">
+      <h3>Between baths</h3><span>Dry bath foams</span>
+      <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/DryBathFoamingShampoowithPeach1-transparent.png?v=1785731599&width=900" alt="Dry bath">
+    </a>
+    <a class="tile tile--blush" href="collection.html?c=paws">
+      <h3>Paw care</h3><span>Cleaners &amp; balms</span>
+      <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/natural-paw-transparent.png?v=1785734249&width=900" alt="Paw care">
+    </a>
+    <a class="tile tile--sky" href="collection.html?c=cats">
+      <h3>For cats</h3><span>The Meow range</span>
+      <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/strawberry_shampoo-pump-left.png?v=1791014358&width=900" alt="Cat care">
+    </a>
   </div>
 </section>
 
-<section class="section--tight wrap" style="padding-bottom:clamp(48px,6.5vw,100px)">
+<section class="section--tight wrap">
+  <div class="section-head" style="margin-bottom:20px">
+    <div><span class="eyebrow">Shop by concern</span><h2 class="display-s" style="margin-top:10px">Start where it troubles them.</h2></div>
+    <a class="link-u" href="collection.html">All 14 products</a>
+  </div>
+  <div class="concerns reveal">
+    <a class="concern" href="collection.html?c=outdoor"><i>01</i> Ticks &amp; fleas</a>
+    <a class="concern" href="collection.html"><i>02</i> Itchy skin</a>
+    <a class="concern" href="collection.html"><i>03</i> Bad odour</a>
+    <a class="concern" href="collection.html?c=paws"><i>04</i> Cracked paws</a>
+    <a class="concern" href="collection.html?c=cats"><i>05</i> Cat care</a>
+    <a class="concern" href="collection.html"><i>06</i> First bath</a>
+    <a class="concern" href="collection.html"><i>07</i> Puppy training</a>
+  </div>
+</section>
+
+<section class="section wrap">
   <div class="section-head">
-    <div><span class="eyebrow">The shelf, most reordered</span><h2 class="display-m">Bestsellers.</h2></div>
+    <div><span class="eyebrow">Most reordered</span><h2 class="display-m">The bestsellers.</h2></div>
     <a class="link-u" href="collection.html">View all</a>
   </div>
   <div class="grid-products"><article class="card reveal" data-price="799" data-title="Neem Pet Herbal Shampoo — 1L" data-pet="dog" data-concern="ticks,grooming" data-format="shampoo">
   <a class="card__media" href="product.html">
     <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900" alt="Neem Pet Herbal Shampoo — 1L" loading="lazy">
-    <span class="card__tag">No. 01 bestseller</span>
+    <span class="card__tag">No. 1 bestseller</span>
     <button class="card__quick" data-add data-id="neem-pet-herbal-shampoo-1l" data-title="Neem Pet Herbal Shampoo — 1L" data-price="799" data-img="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900">Add to bag</button>
   </a>
   <div class="card__body">
@@ -168,31 +205,27 @@
 </article></div>
 </section>
 
-<section class="section" style="border-top:1px solid var(--line)">
-  <div class="wrap">
-    <div class="section-head">
-      <div><span class="eyebrow">The Meow range — for cats</span><h2 class="display-m">For the cat<br>who disagrees.</h2></div>
-      <a class="link-u" href="collection.html?c=cats">The Meow range</a>
-    </div>
-    <div class="split">
-      <div class="split__art"><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/strawberry_shampoo-pump-left.png?v=1791014358&width=900" alt="Meow Strawberry Cat Shampoo"></div>
-      <div class="split__text">
-        <h3 class="display-s" style="margin-bottom:14px">Bathing a cat is a negotiation.</h3>
-        <p class="lede">Keep it short and pleasant. The Meow range is tearless, pH-balanced for cats,
-        and rinses in seconds — strawberry for softness, oatmeal for sensitive skin.</p>
-        <div class="hero__actions" style="margin-top:26px">
-          <a class="btn btn--ghost" href="product.html">Shop the Meow shampoo</a>
-        </div>
-      </div>
+<section class="section--tight wrap">
+  <div class="band reveal">
+    <span class="eyebrow">The house standard</span>
+    <h2 class="display-l" style="max-width:20ch;margin-top:14px">One number decides<br>everything we make.</h2>
+    <p class="lede" style="margin-top:20px">A dog's skin sits at pH 6.8. Human shampoo sits near 5.5 — which is why it
+    strips the coat and leaves the itch behind. Every BSCLY formula is built to that one number, then
+    tested batch by batch in our Ambala studio.</p>
+    <div class="band__grid">
+      <div class="band__cell"><b data-count="6.8" data-dec="1">6.8</b><span>Balanced pH</span></div>
+      <div class="band__cell"><b data-count="85" data-suffix="%">85%</b><span>India-sourced</span></div>
+      <div class="band__cell"><b data-count="0">0</b><span>Synthetic dyes</span></div>
+      <div class="band__cell"><b data-count="14">14</b><span>Day returns</span></div>
     </div>
   </div>
 </section>
 
-<section class="section wrap" style="border-top:1px solid var(--line)">
+<section class="section wrap">
   <div class="split">
     <div class="split__text">
       <span class="eyebrow">The bath day ritual</span>
-      <h2 class="display-l" style="margin:16px 0 20px">Wash. Refresh.<br><em class="italic">Finish.</em></h2>
+      <h2 class="display-l" style="margin:14px 0 18px">Wash. Refresh.<br><em class="hl">Finish.</em></h2>
       <p class="lede">Three steps, twenty minutes, a coat that stays soft for days. Built so a
       first-time pet parent can do it without a groomer, and a salon can do it forty times a day.</p>
       <ul class="num-list">
@@ -200,13 +233,23 @@
         <li><b>II</b><span><strong>Refresh</strong>Dry bath foam between baths. No tub, no towels, no chase.</span></li>
         <li><b>III</b><span><strong>Finish</strong>Natural Paw on the pads, a light mist of perfume on the coat.</span></li>
       </ul>
-      <div style="margin-top:28px"><a class="btn btn--ghost" href="product.html">Shop the ritual</a></div>
+      <div style="margin-top:26px"><a class="btn btn--ghost" href="product.html">Shop the ritual</a></div>
     </div>
     <div class="split__art"><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/DryBathFoamingShampoowithPeach1-transparent.png?v=1785731599&width=900" alt="Dry Bath Foaming Shampoo"></div>
   </div>
 </section>
 
 <section class="section--tight wrap">
+  <div class="section-head">
+    <div><span class="eyebrow">@bsclyforpets</span><h2 class="display-m">Real pets. Real ritual.</h2></div>
+    <a class="link-u" href="#">Follow the house</a>
+  </div>
+  <div class="lifestyle reveal">
+    <figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Dry_Bath_Foaming_Shampoo_with_Peach_2.jpg?v=1750505419&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Paw_Cleaner_with_Lavender_Vanilla_2.jpg?v=1750500744&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Anti_Chew_Spray_2.jpg?v=1749621089&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Natural_Paw_2.jpg?v=1749619969&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Flea_Ticks_Neem_Dog_Powder_2.jpg?v=1749634550&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Dog_Bath_Brush_Pink_3.jpg?v=1750762949&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Total_Care_Shampoo_1000_ML_2.png?v=1778740731&width=700" alt="BSCLY bath day" loading="lazy"></figure><figure><img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/Cat_Strawberry_Shampoo_3.png?v=1778666439&width=700" alt="BSCLY bath day" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="section wrap">
   <div class="section-head">
     <div><span class="eyebrow">The formulary</span><h2 class="display-m">Eight actives doing<br>the real work.</h2></div>
     <a class="link-u" href="ingredients.html">Full formulary</a>
@@ -219,7 +262,7 @@
   </div>
 </section>
 
-<section class="section wrap" style="border-top:1px solid var(--line)">
+<section class="section wrap">
   <div class="section-head">
     <div><span class="eyebrow">The shelf, in full</span><h2 class="display-m">Everything we make.</h2></div>
     <a class="link-u" href="collection.html">Shop all</a>
@@ -227,7 +270,7 @@
   <div class="grid-products"><article class="card reveal" data-price="799" data-title="Neem Pet Herbal Shampoo — 1L" data-pet="dog" data-concern="ticks,grooming" data-format="shampoo">
   <a class="card__media" href="product.html">
     <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900" alt="Neem Pet Herbal Shampoo — 1L" loading="lazy">
-    <span class="card__tag">No. 01 bestseller</span>
+    <span class="card__tag">No. 1 bestseller</span>
     <button class="card__quick" data-add data-id="neem-pet-herbal-shampoo-1l" data-title="Neem Pet Herbal Shampoo — 1L" data-price="799" data-img="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900">Add to bag</button>
   </a>
   <div class="card__body">
@@ -269,7 +312,7 @@
     <span class="card__price mono">₹399.00</span>
   </div>
 </article></div>
-  <div style="margin-top:clamp(14px,2vw,30px)"><div class="grid-products"><article class="card reveal" data-price="299" data-title="Dry Bath Foaming Shampoo with Peach" data-pet="dog" data-concern="odour,grooming" data-format="drybath">
+  <div style="margin-top:clamp(12px,1.8vw,24px)"><div class="grid-products"><article class="card reveal" data-price="299" data-title="Dry Bath Foaming Shampoo with Peach" data-pet="dog" data-concern="odour,grooming" data-format="drybath">
   <a class="card__media" href="product.html">
     <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/DryBathFoamingShampoowithPeach1-transparent.png?v=1785731599&width=900" alt="Dry Bath Foaming Shampoo with Peach" loading="lazy">
     
@@ -316,7 +359,7 @@
 </article></div></div>
 </section>
 
-<section class="section--tight wrap" style="padding-bottom:clamp(48px,6.5vw,100px)">
+<section class="section--tight wrap">
   <div class="section-head"><div><span class="eyebrow">The house promise</span>
     <h2 class="display-m">Crafted with care,<br>delivered with conscience.</h2></div></div>
   <div class="assure reveal">
@@ -327,23 +370,25 @@
   </div>
 </section>
 
-<section class="news" id="notes">
-  <div class="wrap news__inner">
-    <div>
-      <span class="eyebrow">Notes from the shelf</span>
-      <h2 class="display-m" style="margin:14px 0 12px">One thoughtful letter a month.</h2>
-      <p class="lede">Seasonal care notes, tick-season warnings before they matter, and first word
-      when a favourite is back. Never more than once a month.</p>
-    </div>
-    <form data-newsletter>
-      <div class="field">
-        <input type="email" required placeholder="Your email address" aria-label="Email address">
-        <button type="submit">Subscribe</button>
+<div class="wrap" id="notes">
+  <section class="news">
+    <div class="news__inner">
+      <div>
+        <span class="eyebrow">Notes from the shelf</span>
+        <h2 class="display-m" style="margin:12px 0 10px">One thoughtful letter a month.</h2>
+        <p class="lede">Seasonal care notes, tick-season warnings before they matter, and first word
+        when a favourite is back. Never more than once a month.</p>
       </div>
-      <p class="small" style="margin-top:12px">By subscribing you agree to our privacy policy. Unsubscribe anytime.</p>
-    </form>
-  </div>
-</section>
+      <form data-newsletter>
+        <div class="field">
+          <input type="email" required placeholder="Your email address" aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </div>
+        <p class="small" style="margin-top:12px">By subscribing you agree to our privacy policy. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </section>
+</div>
 
 </main>
 
@@ -352,9 +397,9 @@
     <div class="footer__top">
       <div>
         <span class="logo">BSCLY</span>
-        <p style="margin-top:16px;max-width:34ch">A pet-care house from Ambala — formulated at pH 6.8
+        <p style="margin-top:14px;max-width:34ch">A pet-care house from Ambala — formulated at pH 6.8
         for the way Indian dogs and cats live, bathe and play.</p>
-        <p style="margin-top:16px">Care Squad · +91 99963 66899<br>WhatsApp, Mon–Sat 10:00–18:00 IST</p>
+        <p style="margin-top:14px">Care Squad · +91 99963 66899<br>WhatsApp, Mon–Sat 10:00–18:00 IST</p>
       </div>
       <div>
         <h4>Shop</h4>
@@ -392,7 +437,7 @@
 <aside class="cart" aria-label="Shopping bag">
   <div class="cart__head">
     <h3>Your bag</h3>
-    <button data-close-cart class="eyebrow">Close</button>
+    <button data-close-cart class="eyebrow eyebrow--plain">Close</button>
   </div>
   <div class="cart__ship">
     <p data-ship-msg>₹499 away from complimentary shipping</p>
@@ -403,7 +448,7 @@
     <div class="cart__row"><span>Subtotal</span><span class="mono" data-subtotal>₹0</span></div>
     <div class="cart__row"><span class="small">Taxes included · shipping at checkout</span></div>
     <div class="cart__row cart__row--total"><span>Total</span><span class="mono" data-subtotal>₹0</span></div>
-    <button class="btn btn--block" data-checkout>Proceed to checkout</button>
+    <button class="btn btn--clay btn--block" data-checkout>Proceed to checkout</button>
     <p class="small" style="margin-top:12px;text-align:center">Secure checkout · UPI, cards, netbanking</p>
   </div>
 </aside>

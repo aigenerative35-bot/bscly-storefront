@@ -9,7 +9,7 @@
 <meta property="og:description" content="BSCLY — pH 6.8 pet grooming, made in India for the skin your pet lives in.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/theme.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
   <span>250 trade partners nationwide</span>
 </div></div>
 
-<header class="header">
+<header class="header" data-header>
   <div class="wrap header__bar">
     <nav class="header__nav">
       <a href="collection.html">Shop all</a>
@@ -43,7 +43,7 @@
 <div class="nav-drawer">
   <div class="nav-drawer__top">
     <span class="logo">BSCLY</span>
-    <button data-close-nav class="eyebrow">Close</button>
+    <button data-close-nav class="eyebrow eyebrow--plain">Close</button>
   </div>
   <a href="index.html">Home</a>
   <a href="collection.html">Shop all</a>
@@ -62,11 +62,11 @@
 <section class="page-head wrap">
   <div class="crumbs"><a href="index.html">Home</a> <span>/</span> <span>All pet care</span></div>
   <h1 class="display-l" style="max-width:18ch">All pet care<br>products.</h1>
-  <p class="lede" style="margin-top:20px">Shampoos and dry baths at pH 6.8, paw cleaners and balms, neem for tick
+  <p class="lede" style="margin-top:18px">Shampoos and dry baths at pH 6.8, paw cleaners and balms, neem for tick
   season, fragrance and training sprays. Made in India, tested batch by batch.</p>
 </section>
 
-<section class="wrap" style="padding-bottom:clamp(48px,6.5vw,100px)">
+<section class="wrap" style="padding-bottom:clamp(40px,6vw,80px)">
   <div class="shop">
     <aside class="filters">
       <div class="filter-group">
@@ -94,7 +94,7 @@
         <label><input type="checkbox" data-filter="format" value="spray"> Spray</label>
         <label><input type="checkbox" data-filter="format" value="brush"> Accessory</label>
       </div>
-      <div class="filter-group" style="border-bottom:0">
+      <div class="filter-group">
         <h4>Care squad</h4>
         <p class="small" style="line-height:1.7">Not sure which formula? WhatsApp us — a real person
         answers, Mon–Sat 10:00–18:00 IST.<br><br><a class="link-u" href="#">+91 99963 66899</a></p>
@@ -103,7 +103,7 @@
 
     <div>
       <div class="shop__bar">
-        <span class="count" data-count>14 pieces</span>
+        <span class="count" data-product-count>14 products</span>
         <select class="sort" data-sort aria-label="Sort products">
           <option value="featured">Sort — Featured</option>
           <option value="price-asc">Price, low to high</option>
@@ -115,7 +115,7 @@
         <article class="card reveal" data-price="799" data-title="Neem Pet Herbal Shampoo — 1L" data-pet="dog" data-concern="ticks,grooming" data-format="shampoo">
   <a class="card__media" href="product.html">
     <img src="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900" alt="Neem Pet Herbal Shampoo — 1L" loading="lazy">
-    <span class="card__tag">No. 01 bestseller</span>
+    <span class="card__tag">No. 1 bestseller</span>
     <button class="card__quick" data-add data-id="neem-pet-herbal-shampoo-1l" data-title="Neem Pet Herbal Shampoo — 1L" data-price="799" data-img="https://cdn.shopify.com/s/files/1/0768/8768/7387/files/BSCLY_Neem_Herbal_Shampoo_1x1_606bbc9b-7369-4ff6-b8eb-2244fec9f844.jpg?v=1793184004&width=900">Add to bag</button>
   </a>
   <div class="card__body">
@@ -279,9 +279,9 @@
     <div class="footer__top">
       <div>
         <span class="logo">BSCLY</span>
-        <p style="margin-top:16px;max-width:34ch">A pet-care house from Ambala — formulated at pH 6.8
+        <p style="margin-top:14px;max-width:34ch">A pet-care house from Ambala — formulated at pH 6.8
         for the way Indian dogs and cats live, bathe and play.</p>
-        <p style="margin-top:16px">Care Squad · +91 99963 66899<br>WhatsApp, Mon–Sat 10:00–18:00 IST</p>
+        <p style="margin-top:14px">Care Squad · +91 99963 66899<br>WhatsApp, Mon–Sat 10:00–18:00 IST</p>
       </div>
       <div>
         <h4>Shop</h4>
@@ -319,7 +319,7 @@
 <aside class="cart" aria-label="Shopping bag">
   <div class="cart__head">
     <h3>Your bag</h3>
-    <button data-close-cart class="eyebrow">Close</button>
+    <button data-close-cart class="eyebrow eyebrow--plain">Close</button>
   </div>
   <div class="cart__ship">
     <p data-ship-msg>₹499 away from complimentary shipping</p>
@@ -330,7 +330,7 @@
     <div class="cart__row"><span>Subtotal</span><span class="mono" data-subtotal>₹0</span></div>
     <div class="cart__row"><span class="small">Taxes included · shipping at checkout</span></div>
     <div class="cart__row cart__row--total"><span>Total</span><span class="mono" data-subtotal>₹0</span></div>
-    <button class="btn btn--block" data-checkout>Proceed to checkout</button>
+    <button class="btn btn--clay btn--block" data-checkout>Proceed to checkout</button>
     <p class="small" style="margin-top:12px;text-align:center">Secure checkout · UPI, cards, netbanking</p>
   </div>
 </aside>
