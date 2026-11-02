@@ -484,8 +484,9 @@ html.is-static .hero h1 .w{opacity:1!important;transform:none!important;animatio
 .lifestyle img{object-fit:cover}
 
 @media(max-width:900px){
-  .hero__banner{min-height:520px;align-items:flex-end}
-  .hero__banner::after{background:linear-gradient(to top,rgba(8,34,27,.94) 0%,rgba(8,34,27,.7) 46%,rgba(8,34,27,.15) 100%)}
+  .hero__banner{min-height:560px;align-items:flex-end}
+  .hero__banner .bg{object-position:36% 26%}
+  .hero__banner::after{background:linear-gradient(to top,rgba(8,34,27,.97) 0%,rgba(8,34,27,.82) 38%,rgba(8,34,27,.25) 72%,rgba(8,34,27,.05) 100%)}
   .hero__card{display:none}
   .petcard--photo{min-height:300px}
   .petcard--photo .petcard__text{max-width:100%}
