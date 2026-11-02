@@ -3,7 +3,9 @@
 An editorial storefront redesign for **bsclyforpets.com** — all-white ground, Didone headlines,
 real product photography from the live BSCLY catalogue, built to drop into Shopify.
 
-**Live preview:** https://github.com/ — see the Pages URL in the repo settings (Actions/Pages).
+**Live preview:** https://aigenerative35-bot.github.io/bscly-storefront/
+
+Repo: https://github.com/aigenerative35-bot/bscly-storefront
 
 ---
 
