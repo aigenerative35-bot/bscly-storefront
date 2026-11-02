@@ -718,3 +718,23 @@ html.is-static .hero h1 .w{opacity:1!important;transform:none!important;animatio
 .hero--intro{padding-block:clamp(28px,4vw,56px) clamp(10px,2vw,24px)}
 .camp-copy h2{font-size:clamp(24px,3.2vw,54px)}
 .camp-copy p{font-size:clamp(12px,1.05vw,16px)}
+
+/* ---------- shop by problem ---------- */
+.probgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.4vw,30px)}
+.probcard{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:20px;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.probcard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.probcard__media{position:relative;aspect-ratio:4/3.4;overflow:hidden;background:#F3F2EE}
+.probcard__media img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.probcard:hover .probcard__media img{transform:scale(1.06)}
+.probcard__badge{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.95);color:#111;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;border-radius:100px}
+.probcard__body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.probcard h3{font-size:clamp(18px,1.7vw,22px);line-height:1.15;margin-bottom:6px}
+.probcard__solve{font-size:13px;color:var(--ink-70);line-height:1.5;margin-bottom:16px}
+.probcard__buy{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.probcard__prod{min-width:0}
+.probcard__prod span{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50);margin-bottom:2px}
+.probcard__prod strong{display:block;font-family:var(--display);font-size:14.5px;font-weight:600;line-height:1.25;color:var(--ink)}
+.probcard__btn{flex:none;background:#111;color:#fff;border-radius:100px;padding:11px 18px;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;transition:.35s var(--ease);border:1px solid #111}
+.probcard__btn:hover{background:#fff;color:#111}
+@media(max-width:1100px){.probgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.probgrid{grid-template-columns:1fr}}
