@@ -799,17 +799,21 @@ html.is-static .hero h1 .w{opacity:1!important;transform:none!important;animatio
   .photoreviews{grid-template-columns:repeat(2,1fr)}
 }
 
-/* ---------- graceful fallback behind product images ---------- */
-.card__media,.catcard__media,.gallery__main,.gallery__thumbs button,.cart-item__img,.camp-art,.tile{
+/* ---------- graceful fallback — only when an image fails ---------- */
+.card__media.no-img,.catcard__media.no-img,.gallery__main.no-img,.gallery__thumbs button.no-img,
+.cart-item__img.no-img,.camp-art.no-img,.tile.no-img{
   background-image:url('bottle-fallback.svg');
   background-repeat:no-repeat;
   background-position:center;
   background-size:auto 46%;
 }
-.gallery__thumbs button{background-size:auto 72%}
-.cart-item__img{background-size:auto 70%}
-.camp-art{background-size:auto 62%}
-.tile{background-position:center 88%;background-size:auto 46%}
+.gallery__thumbs button.no-img{background-size:auto 72%}
+.cart-item__img.no-img{background-size:auto 70%}
+.camp-art.no-img{background-size:auto 62%}
 img.img-missing{opacity:0}
 .catcard__media--photo{padding:0;background-image:none}
 .catcard__media--photo img{width:100%;height:100%;object-fit:cover;mix-blend-mode:normal;border-radius:14px}
+.lifestyle figure.life-video{background:#111}
+.lifestyle figure.life-video video{width:100%;height:100%;object-fit:cover;display:block}
+.life-video__badge{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.95);color:#111;border-radius:100px;padding:6px 11px;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px;z-index:2}
+.life-video__badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#111}

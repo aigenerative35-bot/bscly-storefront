@@ -304,8 +304,12 @@
   });
 
   /* ---------- 11. Image fallback ---------- */
+  function markMissing(img) {
+    img.classList.add('img-missing');
+    if (img.parentElement) img.parentElement.classList.add('no-img');
+  }
   document.querySelectorAll('.card__media img,.catcard__media img,.gallery__main img,.gallery__thumbs img,.cart-item__img img,.camp-art img,.tile img').forEach(function (img) {
-    img.addEventListener('error', function () { img.classList.add('img-missing'); });
-    if (img.complete && img.naturalWidth === 0) img.classList.add('img-missing');
+    img.addEventListener('error', function () { markMissing(img); });
+    if (img.complete && img.naturalWidth === 0) markMissing(img);
   });
 })();
