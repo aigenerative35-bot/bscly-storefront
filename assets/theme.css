@@ -738,3 +738,63 @@ html.is-static .hero h1 .w{opacity:1!important;transform:none!important;animatio
 .probcard__btn:hover{background:#fff;color:#111}
 @media(max-width:1100px){.probgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.probgrid{grid-template-columns:1fr}}
+
+/* ---------- PDP: campaign / video band ---------- */
+.adband{position:relative;border-radius:24px;overflow:hidden;background:#111;aspect-ratio:16/9;max-height:620px}
+.adband video,.adband img.fill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.adband::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.72) 0%,rgba(0,0,0,.18) 46%,rgba(0,0,0,.05) 100%)}
+.adband__copy{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:clamp(20px,3.4vw,52px);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;color:#fff}
+.adband__copy .eyebrow{color:#fff}
+.adband__copy .eyebrow::before{background:#fff}
+.adband__copy h2{color:#fff;font-size:clamp(24px,3.4vw,52px);margin:12px 0 8px;max-width:22ch}
+.adband__copy p{color:rgba(255,255,255,.82);font-size:clamp(13px,1.05vw,16px);max-width:42ch}
+.adband .btn--light{background:#fff;color:#111;border-color:#fff}
+
+/* campaign print strip */
+.campstrip{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+.campstrip img{width:100%;border-radius:18px;display:block}
+
+/* ---------- PDP: reviews ---------- */
+.proof{display:grid;grid-template-columns:300px 1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.ratingcard{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:20px;padding:24px;position:sticky;top:100px}
+.ratingcard__big{font-family:var(--display);font-size:56px;font-weight:600;line-height:1;letter-spacing:-.03em}
+.stars{display:inline-flex;gap:3px;vertical-align:middle}
+.stars svg{width:15px;height:15px;fill:#111}
+.stars svg.off{fill:rgba(0,0,0,.16)}
+.ratingcard .muted{font-size:12.5px;color:var(--ink-70);margin-top:6px}
+.ratingbars{margin:18px 0 20px;display:grid;gap:8px}
+.ratingbar{display:grid;grid-template-columns:32px 1fr 34px;align-items:center;gap:10px;font-size:11.5px;color:var(--ink-70)}
+.ratingbar .track{height:6px;border-radius:100px;background:#EFEFEC;overflow:hidden}
+.ratingbar .track i{display:block;height:100%;background:#111;border-radius:100px}
+.ratingcard .btn{width:100%;justify-content:center}
+
+.reviews{display:grid;gap:14px}
+.review{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:18px;padding:20px 22px;transition:box-shadow .4s var(--ease)}
+.review:hover{box-shadow:var(--shadow)}
+.review__head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.avatar{width:38px;height:38px;border-radius:50%;background:#F1F1EE;display:grid;place-items:center;font-family:var(--display);font-size:15px;font-weight:600;flex:none}
+.review__who{font-size:13.5px;font-weight:500;line-height:1.2}
+.review__meta{font-size:11.5px;color:var(--ink-50);display:flex;align-items:center;gap:8px;margin-top:2px}
+.verified{display:inline-flex;align-items:center;gap:4px;color:#111;font-weight:500}
+.verified svg{width:11px;height:11px;stroke:#111;fill:none;stroke-width:2}
+.review__title{font-family:var(--display);font-size:16px;font-weight:600;margin:8px 0 4px}
+.review__body{font-size:13.5px;line-height:1.65;color:var(--ink-70)}
+.review__foot{display:flex;gap:14px;margin-top:12px;font-size:11.5px;color:var(--ink-50)}
+.review__foot button{font-size:11.5px;color:var(--ink-50);display:inline-flex;gap:5px;align-items:center}
+.review__foot button:hover{color:#111}
+.review__stars{margin-left:auto;display:inline-flex;gap:2px}
+.review__stars svg{width:12px;height:12px;fill:#111}
+
+.photoreviews{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+.photoreviews figure{margin:0;position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1/1}
+.photoreviews img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.photoreviews figure:hover img{transform:scale(1.06)}
+.photoreviews figcaption{position:absolute;left:8px;bottom:8px;background:rgba(255,255,255,.94);border-radius:100px;padding:4px 9px;font-size:10px;font-weight:600;display:flex;gap:3px;align-items:center}
+.photoreviews figcaption svg{width:9px;height:9px;fill:#111}
+
+@media(max-width:900px){
+  .proof{grid-template-columns:1fr}
+  .ratingcard{position:static}
+  .adband{aspect-ratio:4/5;max-height:none}
+  .photoreviews{grid-template-columns:repeat(2,1fr)}
+}
