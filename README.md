@@ -66,6 +66,22 @@ Dog Bath Brush.
 To add more: append a row to the `P` list in `build.py` (title, price, image URL, pet, concern,
 format, notes, tag) and re-run it.
 
+
+## Photo credits
+
+The pet photography in this preview comes from Wikimedia Commons and is used under the licences below.
+Replace it with BSCLY's own shoot before going live.
+
+| File | Source | Licence |
+|---|---|---|
+| `assets/img/hero-bath.jpg` | "MWD Spa Day" — U.S. Army photo by Sgt. 1st Class Tanisha Karn | Public domain |
+| `assets/img/dog-portrait.jpg` | "Mountain dog looking at you" | CC0 |
+| `assets/img/cat-groom.jpg` | "Cat grooming" — TeamK | CC0 |
+| `assets/img/dog-golden.jpg` | "Dülmen, Hausdülmen, Golden Retriever" | CC BY-SA 4.0 |
+| `assets/img/cat-portrait.jpg` | "Tabby cat with blue eyes" | CC BY-SA 4.0 |
+| `assets/img/life-cat-outdoor.jpg` | "A cat grooming" — Takashi Hososhima | CC BY-SA 2.0 |
+| `assets/img/puppies.jpg` | "Puppies after bath" — Jessicadoub | CC BY-SA 3.0 |
+
 ## Porting to Shopify
 
 | This file | Shopify |
