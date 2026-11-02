@@ -286,4 +286,20 @@
       rail.scrollBy({ left: dir * step, behavior: 'smooth' });
     });
   });
+
+  /* ---------- 10. Banner dots ---------- */
+  document.querySelectorAll('[data-dots]').forEach(function (dots) {
+    const rail = document.getElementById(dots.dataset.dots);
+    if (!rail) return;
+    const slides = Array.from(rail.children);
+    dots.innerHTML = slides.map((_, i) => '<button aria-label="Slide ' + (i + 1) + '"></button>').join('');
+    const btns = Array.from(dots.children);
+    function sync() {
+      const i = Math.round(rail.scrollLeft / rail.clientWidth);
+      btns.forEach((b, n) => b.classList.toggle('is-active', n === i));
+    }
+    btns.forEach((b, i) => b.addEventListener('click', () => rail.scrollTo({ left: i * rail.clientWidth, behavior: 'smooth' })));
+    rail.addEventListener('scroll', sync, { passive: true });
+    sync();
+  });
 })();
