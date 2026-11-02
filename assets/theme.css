@@ -817,3 +817,15 @@ img.img-missing{opacity:0}
 .lifestyle figure.life-video video{width:100%;height:100%;object-fit:cover;display:block}
 .life-video__badge{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.95);color:#111;border-radius:100px;padding:6px 11px;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px;z-index:2}
 .life-video__badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#111}
+
+/* ---------- reel grid (1080x1920 / 9:16) ---------- */
+.reelgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.4vw,18px)}
+.reel{position:relative;margin:0;aspect-ratio:1080/1920;border-radius:18px;overflow:hidden;background:#111}
+.reel video{width:100%;height:100%;object-fit:cover;display:block}
+.reel__tag{position:absolute;top:10px;left:10px;z-index:2;background:rgba(255,255,255,.95);color:#111;border-radius:100px;padding:6px 11px;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
+.reel__tag::before{content:'';width:6px;height:6px;border-radius:50%;background:#111}
+.reel__sound{position:absolute;top:8px;right:8px;z-index:2;width:32px;height:32px;border-radius:50%;background:rgba(0,0,0,.45);display:grid;place-items:center;color:#fff;backdrop-filter:blur(4px)}
+.reel__sound svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}
+.reel__sound.is-on{background:#fff;color:#111}
+.reel__cap{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 14px;color:#fff;font-size:12.5px;line-height:1.35;background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,0))}
+@media(max-width:900px){.reelgrid{grid-template-columns:repeat(2,1fr)}}

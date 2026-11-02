@@ -312,4 +312,30 @@
     img.addEventListener('error', function () { markMissing(img); });
     if (img.complete && img.naturalWidth === 0) markMissing(img);
   });
+
+  /* ---------- 12. Reels: play only in view, tap to unmute ---------- */
+  const reels = document.querySelectorAll('.reel video');
+  if (reels.length) {
+    if ('IntersectionObserver' in window) {
+      const rio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          const v = en.target;
+          if (en.isIntersecting) { v.play().catch(function () {}); }
+          else { v.pause(); }
+        });
+      }, { threshold: 0.25 });
+      reels.forEach(function (v) { rio.observe(v); });
+    } else {
+      reels.forEach(function (v) { v.play().catch(function () {}); });
+    }
+    document.querySelectorAll('[data-sound]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const v = btn.parentElement.querySelector('video');
+        if (!v) return;
+        v.muted = !v.muted;
+        btn.classList.toggle('is-on', !v.muted);
+        if (!v.muted) { v.play().catch(function () {}); }
+      });
+    });
+  }
 })();
