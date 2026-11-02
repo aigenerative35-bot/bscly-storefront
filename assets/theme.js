@@ -273,4 +273,17 @@
     if (!getCart().length) return toast('Your bag is empty');
     toast('Demo store — connect Shopify checkout to go live');
   });
+
+  /* ---------- 9. Horizontal rails (hero banner + product rail) ---------- */
+  document.querySelectorAll('[data-rail-prev],[data-rail-next]').forEach(function (btn) {
+    const id = btn.dataset.railPrev || btn.dataset.railNext;
+    const rail = document.getElementById(id);
+    if (!rail) return;
+    const dir = btn.dataset.railPrev ? -1 : 1;
+    btn.addEventListener('click', function () {
+      const first = rail.firstElementChild;
+      const step = first ? first.getBoundingClientRect().width + 12 : rail.clientWidth * 0.8;
+      rail.scrollBy({ left: dir * step, behavior: 'smooth' });
+    });
+  });
 })();
